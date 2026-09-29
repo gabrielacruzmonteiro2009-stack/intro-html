@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scarle=1.0">
+<title> Sobre Formulários | HTML </title>
+
+<style>
+body {
+background-color: #ff83cf;
+color: #ffc0e7;
+font-family: sans-serif;
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1> Sobre formúlarios </h1>
+</header>
+
+
+<main>
+<section>
+<h2> O que são formúlarios? </h2>
+<p> Os formúlaros são uma das partes mais importantes do nosso <abbr title="HyperText Markup Language"> HTML</abbr> semântico. Ele serve para: </p>
+
+<ul> 
+<li> Entrada de dados</li>
+<li> Interação </li>
+<li> Acessibilidade </li>
+<li> Validação e envio de informações </li>
+</ul>
+</section>
+
+<section> 
+<h2> Como trabalhar com um form no HTML </h2>
+<p> Para comerçamos a trabalhar com um formúlario dentro do HTML, utilizamos o elemento &lt; form &gt;</p>
+
+<p> Esse elemento, representa um formúlario interativo. </p>
+
+<h3> Criando a estrutura básica </h3>
+
+<form>
+ <!-- Exemplo básico -->
+    <input type="text"> <br>
+
+<label for="nome"> Nome </label> <br>
+<input type="text" id="nome" name="nome"> <br>
+
+    <label for="email"> Email </label> <br>
+<input type="email" name="email" id="email"> <br>
+
+<input type="password" name="" id=""> <br>
+
+<input type="date"> <br>
+
+<input type="tel" name="" id=""> <br>
+
+<label>
+<input type="checkbox" name="" id="">
+Aceito os termos de uso do site
+<button type="submit">Enviar formúlario</button>
+</form>
+
+</section>
+
+<section>
+<h2> Formúlarios agrupados </h2>
+<p> Para criarmos formúlarios agrupados, utilizamos o elemento &lt; fieldset &gt; e &lt; legend &gt; . </p>
+
+<form action="">
+<fieldset>
+    <legend> Informações pessoais </legend>
+    <input type="text" name="nome" id="nome"> <br>
+
+<label for="email-login"> Email </label> <br>
+<input type="email" name="email-cadastro" id="email-cadastro" placeholder="gabi@cruz.com"> <br>
+</fieldset>
+
+<fieldset>
+<legend> Endereço </legend>
+
+<label for="cep"> CEP </label>
+<input type="text" name="cep" id="cep" placeholder="41238-978"> <br>
+
+<label for="rua"> Rua </label>
+<input type="text" name="rua" id="rua" placeholder="Rua Ali"> <br>
+</fieldset>
+
+
+<button type="submit"> Enviar dados </button>
+</form>
+</section>
+</main>
+</body>
+</html>
